@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper_pink"
+    tools:context=".ui.universalActivities.EditHealthInfo">
+
+    <include
+        android:id="@+id/add_healthInfo_toolbar"
+        layout="@layout/toolbar_layout" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp">
+
+            <ImageView
+                android:id="@+id/add_healthInfo_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/add_healthInfo_btnPickImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="@string/pick_image"
+                android:layout_margin="18dp"
+                android:textSize="18dp"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/add_healthInfo_imageView"
+                app:layout_constraintEnd_toEndOf="@id/add_healthInfo_imageView"/>
+
+            <EditText
+                android:id="@+id/add_healthInfo_title_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/forget"
+                android:textColor="#0d6e6a"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:layout_marginHorizontal="10dp"
+                android:hint="@string/title"
+                app:layout_constraintTop_toBottomOf="@id/add_healthInfo_btnPickImage"
+                />
+
+            <EditText
+                android:id="@+id/add_healthInfo_youtubeLink_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/forget"
+                android:hint="@string/youtube_video_link"
+                android:textColor="#0d6e6a"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/add_healthInfo_title_et"
+                tools:layout_editor_absoluteX="10dp" />
+
+            <EditText
+                android:id="@+id/add_healthInfo_description_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/forget"
+                android:gravity="top|start"
+                android:hint="@string/description"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:textColor="#0d6e6a"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/add_healthInfo_youtubeLink_et"
+                tools:layout_editor_absoluteX="10dp" />
+
+            <Button
+                android:id="@+id/add_healthInfo_btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:layout_margin="10dp"
+                android:textSize="18dp"
+                android:textColor="#FFF"
+                android:background="@drawable/button"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/add_healthInfo_description_et"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <Button
+                android:id="@+id/add_healthInfo_btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                android:layout_margin="10dp"
+                android:textSize="18dp"
+                android:textColor="#FFF"
+                android:background="@drawable/button"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/add_healthInfo_btnSave"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

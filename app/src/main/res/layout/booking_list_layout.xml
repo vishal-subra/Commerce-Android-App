@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/wallpaper_pink"
+    android:layout_marginHorizontal="10dp"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/booking_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/consultation"
+        android:textSize="22sp"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/booking_list_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/consultation"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/booking_list_title" />
+
+    <TextView
+        android:id="@+id/booking_list_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/consultation"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/booking_list_date"
+        app:layout_constraintTop_toBottomOf="@id/booking_list_title" />
+    <View
+        android:id="@+id/booking_list_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#555555"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20sp"
+        app:layout_constraintTop_toBottomOf="@id/booking_list_linkToGoogleCalendar"
+        />
+
+    <Button
+        android:id="@+id/booking_list_setVisited"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="@drawable/btn_tp"
+        android:scaleType="fitCenter"
+        android:text="@string/set_visited"
+        android:tint="@color/colorPrimaryDark"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/booking_list_linkToGoogleCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="@drawable/btn_tp"
+        android:scaleType="fitCenter"
+        android:text="@string/link_to_google_Calender"
+        android:tint="@color/colorPrimaryDark"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/booking_list_status" />
+</androidx.constraintlayout.widget.ConstraintLayout>

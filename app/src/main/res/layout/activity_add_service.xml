@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper_pink"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.universalActivities.AddService">
+
+    <include
+        android:id="@+id/add_service_toolbar"
+        layout="@layout/toolbar_layout" />
+
+    <EditText
+        android:id="@+id/add_service_title_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/forget"
+        android:hint="Service Title"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/add_service_toolbar"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/add_service_desc_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/forget"
+        android:gravity="top|start"
+        android:hint="Service Description"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        app:layout_constraintTop_toBottomOf="@id/add_service_title_et"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <Button
+        android:id="@+id/add_service_btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@drawable/button"
+        app:layout_constraintTop_toBottomOf="@id/add_service_desc_et"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <Button
+        android:id="@+id/delete_service_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:visibility="gone"
+        android:background="@color/colorButtonNormal"
+        app:layout_constraintTop_toBottomOf="@id/add_service_btnSubmit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

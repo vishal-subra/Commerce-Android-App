@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.beautystuffsss.ui.universalActivities.OrderView"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.customer.activities.ShoppingCart"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.universalActivities.EditContactUs"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.universalActivities.AddUpdateProduct"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.universalActivities.EditHealthInfo"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.universalActivities.AddService"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.universalActivities.ComplaintView"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.universalActivities.Complaints"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.customer.activities.AddComplaint"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.universalActivities.MyOrders"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.universalActivities.EditPromotion"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.universalActivities.ViewPromotion"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.universalActivities.Promotions"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.customer.activities.Bookings"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.universalActivities.ContactUs"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.universalActivities.Services"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.pharmacist.pharmacistAuth.PharmacistLogin"
+            android:exported="false"/> <!-- Universal Activities -->
+        <activity android:name="com.example.beautystuffsss.ui.universalActivities.MyProfile"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.universalActivities.EditProfile"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.universalActivities.ChatPharmacist"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.universalActivities.ChatView"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.universalActivities.Intro"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.pharmacist.pharmacistAuth.PharmacistRegister"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.pharmacist.pharmacistAuth.PharmacistScreen"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.customer.activities.customerAuth.CustomerRegister"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.customer.activities.customerAuth.CustomerLogin"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.customer.activities.CustomerPayment"
+            android:exported="false"/>
+        <activity android:name="com.example.beautystuffsss.ui.customer.activities.customerAuth.CustomerScreen"
+            android:exported="false"/> <!-- Pharmacist Dashboard -->
+        <activity android:name="com.example.beautystuffsss.ui.pharmacist.PharmacistHome"
+            android:exported="false"/> <!-- Customer Dashboard -->
+        <activity android:name="com.example.beautystuffsss.ui.customer.activities.CustomerHome"
+            android:exported="false"/>
+        <activity
+            android:name="com.example.beautystuffsss.ui.universalActivities.Splash"
+            android:theme="@style/AppTheme.Fullscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.customer.fragments.CustomerProfile">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/customer_profile_photo"
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:src="@drawable/user1"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.08" />
+
+       <TextView
+           android:id="@+id/customer_profile_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:fontFamily="@font/adamina"
+           android:text="Nur Amira"
+           android:textColor="@color/colorBlack"
+           android:textSize="18sp"
+           app:layout_constraintEnd_toEndOf="@+id/customer_profile_photo"
+           app:layout_constraintStart_toStartOf="@+id/customer_profile_photo"
+           app:layout_constraintTop_toBottomOf="@+id/customer_profile_photo" />
+
+       <GridLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="50dp"
+           android:columnCount="2"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/customer_profile_name">
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/customer_profile_cardProfile"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               android:layout_margin="12dp"
+               app:cardCornerRadius="12dp"
+               app:cardElevation="6dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:background="@color/colorWhite"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:padding="16dp">
+
+                   <ImageView
+                       android:layout_width="88dp"
+                       android:layout_height="88dp"
+                       android:contentDescription="@string/app_name"
+                       android:src="@drawable/user1" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="12dp"
+                       android:fontFamily="@font/anaheim"
+                       android:text="@string/user_profile"
+                       android:textColor="#070707"
+                       android:textSize="18sp" />
+
+               </LinearLayout>
+
+
+           </androidx.cardview.widget.CardView>
+           <androidx.cardview.widget.CardView
+               android:id="@+id/customer_profile_cardComplaints"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               android:layout_margin="12dp"
+               app:cardCornerRadius="12dp"
+               app:cardElevation="6dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:background="@color/colorWhite"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:padding="16dp">
+
+                   <ImageView
+                       android:layout_width="88dp"
+                       android:layout_height="88dp"
+                       android:contentDescription="@string/app_name"
+                       android:src="@drawable/resume" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="12dp"
+                       android:fontFamily="@font/anaheim"
+                       android:text="@string/complaints"
+                       android:textColor="#070707"
+                       android:textSize="18sp" />
+
+               </LinearLayout>
+
+
+           </androidx.cardview.widget.CardView>
+           <androidx.cardview.widget.CardView
+               android:id="@+id/customer_profile_cardContactUs"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               android:layout_margin="12dp"
+               app:cardCornerRadius="12dp"
+               app:cardElevation="6dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:background="@color/colorWhite"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:padding="16dp">
+
+                   <ImageView
+                       android:layout_width="88dp"
+                       android:layout_height="88dp"
+                       android:contentDescription="@string/app_name"
+                       android:src="@drawable/enquiry" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="12dp"
+                       android:fontFamily="@font/anaheim"
+                       android:text="@string/contact_us"
+                       android:textColor="#070707"
+                       android:textSize="18sp" />
+
+               </LinearLayout>
+
+
+           </androidx.cardview.widget.CardView>
+       </GridLayout>
+   </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

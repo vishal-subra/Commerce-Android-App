@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper_pink"
+    tools:context=".ui.customer.activities.customerAuth.CustomerRegister">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/customer_text_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/adamina"
+            android:text="@string/register"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#03071E"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/customer_icon_register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/customer_icon_register"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/verify"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/customer_text_register" />
+
+
+        <EditText
+            android:id="@+id/customer_register_editText_name"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/forget"
+            android:layout_marginHorizontal="20dp"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:textSize="18dp"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="20dp"
+            app:layout_constraintTop_toBottomOf="@id/customer_icon_register" />
+
+        <EditText
+            android:id="@+id/customer_register_editText_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/forget"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColor="#121212"
+            tools:layout_editor_absoluteX="20dp"
+            android:textSize="18dp"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="20dp"
+            app:layout_constraintTop_toBottomOf="@id/customer_register_editText_name" />
+
+        <EditText
+            android:id="@+id/customer_register_editText_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/forget"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:textColor="#121212"
+            tools:layout_editor_absoluteX="20dp"
+            android:textSize="18dp"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="20dp"
+            app:layout_constraintTop_toBottomOf="@id/customer_register_editText_email" />
+
+
+        <EditText
+            android:id="@+id/customer_register_editText_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/forget"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="#121212"
+            tools:layout_editor_absoluteX="20dp"
+            android:textSize="18dp"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="20dp"
+            app:layout_constraintTop_toBottomOf="@id/customer_register_editText_phone" />
+
+        <EditText
+            android:id="@+id/customer_register_editText_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/forget"
+            android:gravity="top|start"
+            android:hint="@string/address"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:textColor="#121212"
+            tools:layout_editor_absoluteX="9dp"
+            android:textSize="18dp"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="20dp"
+            app:layout_constraintTop_toBottomOf="@id/customer_register_editText_password" />
+
+        <Button
+            android:id="@+id/customer_register__register_button"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button"
+            android:text="@string/register"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/bt_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customer_register_editText_address" />
+
+        <TextView
+            android:id="@+id/customer_register_textView_login_here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/already_have_account_login_here"
+            android:textColor="#151414"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/customer_register__register_button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pharmacist_navigation"
+    app:startDestination="@id/pharmacist_dashboard">
+    <fragment
+        android:id="@+id/pharmacist_dashboard"
+        android:name="com.example.beautystuffsss.ui.pharmacist.fragments.PharmacistDashboard"
+        android:label="pharmacist_dashboard"
+        tools:layout="@layout/fragment_pharmacist_dashboard" />
+    <fragment
+        android:id="@+id/pharmacist_products"
+        android:name="com.example.beautystuffsss.ui.pharmacist.fragments.PharmacistProducts"
+        android:label="pharmacist_shopping"
+        tools:layout="@layout/fragment_pharmacist_health_info" />
+    <fragment
+        android:id="@+id/pharmacist_newsletter"
+        android:name="com.example.beautystuffsss.ui.pharmacist.fragments.PharmacistHealthInfo"
+        android:label="pharmacist_newsletter"
+        tools:layout="@layout/fragment_pharmacist_products" />
+    <fragment
+        android:id="@+id/pharmacist_profile"
+        android:name="com.example.beautystuffsss.ui.pharmacist.fragments.PharmacistProfile"
+        android:label="pharmacist_profile"
+        tools:layout="@layout/fragment_pharmacist_profile" />
+</navigation>

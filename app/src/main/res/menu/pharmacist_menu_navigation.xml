@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+
+        android:id="@+id/pharmacist_dashboard"
+        android:icon="@drawable/dashboard"
+        android:title="@string/dashboard" />
+
+    <item
+        android:id="@+id/pharmacist_products"
+        android:icon="@drawable/store2"
+        android:title="@string/products" />
+
+    <item
+        android:id="@+id/pharmacist_profile"
+        android:icon="@drawable/user"
+        android:title="@string/user_profile" />
+
+</menu>

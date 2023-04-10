@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper_pink"
+    tools:context=".ui.universalActivities.EditContactUs">
+
+    <include
+        android:id="@+id/edit_contact_us_toolbar"
+        layout="@layout/toolbar_layout" />
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+        <ImageView
+            android:id="@+id/edit_contact_us_pharma_photo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/edit_contact_us_btnPickPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButtonNormal"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFF"
+            android:text="Pick photo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_contact_us_pharma_photo" />
+
+        <EditText
+            android:id="@+id/edit_contact_us_phone_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/forget"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="50dp"
+            android:hint="@string/phone_no"
+            android:inputType="phone"
+            app:layout_constraintTop_toBottomOf="@id/edit_contact_us_btnPickPhoto" />
+
+        <EditText
+            android:id="@+id/edit_contact_us_address_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/forget"
+            android:layout_marginTop="5dp"
+            android:gravity="top|start"
+            android:hint="@string/address"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            app:layout_constraintTop_toBottomOf="@id/edit_contact_us_phone_et" />
+        <EditText
+            android:id="@+id/edit_contact_us_fbLink_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/forget"
+            android:layout_marginTop="5dp"
+            android:gravity="top|start"
+            android:hint="@string/facebook_link"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@id/edit_contact_us_address_et" />
+
+        <Button
+            android:id="@+id/edit_contact_us_btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/save"
+            android:textColor="#FFF"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/colorButtonNormal"
+            app:layout_constraintTop_toBottomOf="@id/edit_contact_us_fbLink_et" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

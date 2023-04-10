@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper_pink"
+    tools:context=".ui.universalActivities.AddUpdateProduct">
+
+    <include
+        android:id="@+id/add_product_toolbar"
+        layout="@layout/toolbar_layout" />
+
+    <ImageView
+        android:id="@+id/add_product_imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_product_toolbar" />
+
+    <Button
+        android:id="@+id/add_product_pickImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="@string/pick_image"
+        app:layout_constraintBottom_toBottomOf="@id/add_product_imageView"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_product_toolbar" />
+
+    <EditText
+        android:id="@+id/add_product_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/forget"
+        android:hint="Product title"
+        app:layout_constraintTop_toBottomOf="@id/add_product_imageView" />
+
+    <EditText
+        android:id="@+id/add_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/forget"
+        android:layout_marginTop="10dp"
+        android:hint="Product Price i.e RM 3.00"
+        app:layout_constraintTop_toBottomOf="@id/add_product_title" />
+    <EditText
+        android:id="@+id/add_product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/forget"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:lines="3"
+        android:gravity="top"
+        android:hint="Product Description"
+        app:layout_constraintTop_toBottomOf="@id/add_product_price" />
+
+    <Button
+        android:id="@+id/add_product_btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:background="@color/colorButtonNormal"
+        app:layout_constraintTop_toBottomOf="@id/add_product_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:id="@+id/add_product_btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/colorButtonNormal"
+        android:text="@string/delete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_product_description" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

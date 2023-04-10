@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper_pink"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.pharmacist.PharmacistHome">
+
+    <include
+        android:id="@+id/pharmacist_home_toolbar"
+        layout="@layout/toolbar_layout" />
+
+    <fragment
+        android:id="@+id/pharmacist_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/pharmacist_bottom_nav"
+        app:layout_constraintTop_toBottomOf="@id/pharmacist_home_toolbar"
+        app:navGraph="@navigation/pharmacist_navigation" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/pharmacist_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimaryDark"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/pharmacist_menu_navigation" />
+</androidx.constraintlayout.widget.ConstraintLayout>

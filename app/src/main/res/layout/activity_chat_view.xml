@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper_pink"
+    tools:context=".ui.universalActivities.ChatView">
+    <include
+        android:id="@+id/chat_view_toolbar"
+        layout="@layout/toolbar_layout"
+       />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/customer_chatView_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/send_message_layout"
+        app:layout_constraintTop_toBottomOf="@id/chat_view_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/send_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp">
+
+        <EditText
+            android:id="@+id/sendMessageEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_input_bg"
+            android:hint="@string/enter_message"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp" />
+
+        <ImageButton
+            android:id="@+id/sendMessage_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/app_name"
+            android:background="@drawable/send_bg"
+            android:foregroundGravity="right"
+            android:src="@drawable/baseline_send_white_24dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
